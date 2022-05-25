@@ -1,9 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <functions.h>
-#include <functions.c>
+#include "functions.h"
+#include "functions.c"
+
+/*		 TP 3 - ESIEE-IT Rémy JARDIN 		*/
+
 
 int main() {
+int saisie, i, Tab;
 
-	return 0;
+	printf("Creation du Tableau. \nNombre de caractere du tableau : ");
+	scanf("%d", &saisie);
+	Tab = ArrayCreate(saisie);
+
+
+
+// Affichage
+//for (i = 0; i < saisie; i++) {
+//	printf("%d", (Tab+i));
+//}
+
+return 0;
 }

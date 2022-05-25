@@ -1,9 +1,10 @@
-#ifndef functions.c
-#define functions.c
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
 
-int f1() {
+#include <stdio.h>
+#include <stdlib.h>
 
-    return 0;
-}
+int ArrayCreate(int saisie);
+int randomizer();
 
 #endif

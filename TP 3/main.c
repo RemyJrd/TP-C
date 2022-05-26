@@ -5,7 +5,8 @@
 
 
 int main() {
-int saisie, i, Tab;
+int saisie, i;
+int* Tab; 
 
 	printf("Creation du Tableau. \nNombre de caractere du tableau : ");
 	scanf("%d", &saisie);
@@ -13,10 +14,13 @@ int saisie, i, Tab;
 
 
 
+
+
 // Affichage
-//for (i = 0; i < saisie; i++) {
-//	printf("%d", (Tab+i));
-//}
+printf("\n Resultats : ");
+for (i = 0; i < saisie; i++) {
+    printf("%d - ", *(Tab+i));
+}
 
 return 0;
 }

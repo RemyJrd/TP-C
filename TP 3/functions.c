@@ -6,20 +6,21 @@ int i;
 int* Tab = malloc( saisie * sizeof (int));
 
 for (i = 0; i < saisie; i++) {
-    printf("Saisie du %d elements : ", i+1);
-	scanf("%d", &Tab[i]);
-}
 
-printf("\n Resultats : ");
+    *(Tab+i) = randomizer;
+     printf("\n Resultats : ");
 for (i = 0; i < saisie; i++) {
     printf("%d - ", *(Tab+i));
 }
+}
+
 
 return Tab;
 }
 
 int randomizer() {
-int rando;
-
-    return rando;
+srand ( time(NULL) );
+int random_number = rand() % 100;
+  
+  return random_number;
 }

@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int ArrayCreate(int saisie);
+int *ArrayCreate(int saisie);
 int randomizer(void);
 int insereAIndice(void);
 

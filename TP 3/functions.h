@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 int ArrayCreate(int saisie);
-int randomizer();
+int randomizer(void);
+int insereAIndice(void);
 
 #endif

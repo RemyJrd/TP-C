@@ -4,7 +4,7 @@
 /*		 TP 3 - ESIEE-IT Rémy JARDIN 		*/
 
 int main() {
-	int saisie, index, insertion, taille;
+	int saisie, index, insertion, taille, result, recherche;
 
 
 	// Création du tableau avec des valeurs aléatoires.
@@ -38,9 +38,15 @@ int main() {
 
 	supprimeAIndice(Tab, index, taille);
 	Affichage(Tab, taille);
+
+	// Recherche d'une valeur.
+	printf("\nQuelle indice cherchez : ");
+	scanf("%d", &recherche);
+	result = rechercheSequentielle(Tab, recherche);
+	printf("A l'indice %d, vous avez la valeur:  %d\n", recherche, result);
  
 
-	printf("\nRésultats final : \n");
+	printf("\nResultats final : \n");
 	Affichage(Tab, taille);
 	free(Tab);
 	return 0;

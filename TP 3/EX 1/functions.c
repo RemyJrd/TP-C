@@ -36,11 +36,20 @@ int insereAIndice(int* Tab, int index, int insertion, int taille) {
 int supprimeAIndice(int* Tab, int index, int taille) {
     int i;
     for (i = index-1; i <= taille+1; i++) {
-        printf("\n %d", Tab[i]);
         Tab[i] = Tab[i+1];
     }
     Tab = realloc(Tab, taille * sizeof (*Tab));
     return *Tab;
+}
+
+
+int rechercheSequentielle(int* Tab, int index) {
+    // Retourne la valeur de l'index donné en entrée.
+    int i, resultRecherche;
+	for (i = 0; i < index; i++) {
+        resultRecherche = Tab[i];
+	}
+    return resultRecherche;
 }
 
 

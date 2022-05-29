@@ -1,9 +1,11 @@
 #include "functions.h"
 #include "functions.c"
+#include <time.h>
 
 /*		 TP 3 - ESIEE-IT Rémy JARDIN 		*/
 
 int main() {
+	srand(time(0));
 	int saisie, index, insertion, taille, result, recherche;
 
 
